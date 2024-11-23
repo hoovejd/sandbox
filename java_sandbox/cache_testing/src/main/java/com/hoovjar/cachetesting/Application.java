@@ -4,12 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 import com.hoovjar.cachetesting.repositories.BookRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@EnableCaching
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
